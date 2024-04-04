@@ -1,0 +1,152 @@
+/* BODY CSS */
+
+/* Edição da área de 'Destaques' */
+@media (max-width: 1920px) {
+
+    body {
+        display: flex;
+        background-color: #000000;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #D3D3D3;
+    }
+     
+    .destaque {
+        justify-content: center;
+        overflow: hidden;
+        max-width: 1800px;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .destaques-titulo {
+        display: flex;
+        background-color: #2c2b2f;
+        justify-content: space-between;
+        height: 70px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .h-titulo {
+        margin-left: 2%;
+        color: #D3D3D3;
+        transition: color 0.3s;
+    }
+
+    .sub-ver {
+        text-decoration: none;
+        color: #D3D3D3;
+        margin-left: auto;
+        margin-right: 1%;
+        transition: color 0.3s ease;
+    }
+
+    .sub-ver:hover {
+        cursor: pointer;
+        color: #dc3545;
+    }
+
+    .h-titulo:hover {
+        color: #dc3545;
+        cursor: default;
+    }
+
+    .destaques-conteudo {
+        display: flex;
+        background-color: #5d5c63;
+        flex-direction: row;
+    }
+
+    .destaques-fotos {
+         /* Largura máxima do card */
+        width: 185px; /* Para garantir que o card ocupe a largura disponível */
+        height: 275px; /* Altura máxima do card */
+        overflow: hidden; /* Para garantir que o conteúdo dentro do card não ultrapasse a altura definida */
+        border: 1.5px solid #ffd700; /* Adicione uma borda para destacar o card */
+        border-radius: 8px; /* Borda arredondada */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.644); /* Sombra para efeito visual */
+        margin-bottom: 3%;/* Margem ao redor do card */
+        display: inline-block; /* Para que os cards fiquem em linha */
+        transition: box-shadow 0.5s ease;
+    }
+
+    .destaques-fotos:hover {
+        box-shadow: 0px 2px 4px #ffd700;
+    }
+
+    .organiza-titulo {
+ 
+        flex-direction: column;
+        margin: 1%;
+    }
+
+/* INICIO ANIMES */
+
+    .animes {
+        justify-content: center;
+        overflow: hidden;
+        max-width: 1800px;
+        width: 100%;
+    }
+
+    .animes-titulo {
+        display: flex;
+        background-color: #2c2b2f;
+        height: 70px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .animes-conteudo {
+        display: flex;
+        background-color: #5d5c63;
+        flex-wrap: wrap;
+    }
+
+    .animes-fotos {
+        /* Largura máxima do card */
+    width: 300px; /* Para garantir que o card ocupe a largura disponível */
+    height: 169px; /* Altura máxima do card */
+    overflow: hidden; /* Para garantir que o conteúdo dentro do card não ultrapasse a altura definida */
+    border: 1.5px solid #ffd700; /* Adicione uma borda para destacar o card */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.616); /* Sombra para efeito visual */
+    margin-bottom: 3%;    /* Margem ao redor do card */
+    display: inline-block; /* Para que os cards fiquem em linha */
+    transition: box-shadow 0.5s ease;
+    }
+
+    .animes-fotos:hover {
+        box-shadow: 0px 2px 4px #ffd700;
+    }
+
+    .organiza-animes {
+        display: flex;  
+        flex-direction: column;
+        margin: 0.5% 1.6% 0.5% 1.7%;
+    }
+
+    .nome-php {
+        text-decoration: none;
+        color: #D3D3D3;
+        transition: color 3s ease; 
+    }
+
+    .nomes-php:hover {
+        color: #dc3545;
+        cursor: pointer;
+    }
+
+    .nomes-php-a {
+        text-decoration: none;
+        color: #D3D3D3;
+        transition: color 0.3s ease;
+    }
+
+    .nomes-php-a:hover {
+        color: #dc3545;
+    }
+
+}

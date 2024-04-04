@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2b2f;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.h-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #D3D3D3;
+    margin-bottom: 2%;
+}
+
+@keyframes animateText {
+    0%, 20% {
+        color: #fff2;
+    }
+
+    21%, 79% {
+        color: #0f0;
+    }
+
+    80%, 100% {
+        color: #fff2;
+    }
+}
+
+.h-menu span {
+    position: relative;
+    animation: animateText 1s linear infinite;
+}
+
+.ul-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.li-menu {
+    display: flex;
+    background-color: #5d5c63;
+    flex-direction: row;
+    padding: 0;
+    border-right: 1px solid #D3D3D3;
+    height: 40px; /* Altura desejada */
+    width: 110px; /* Largura desejada */
+    transition: border color background-color 0.5s ease;
+}
+
+.li-menu1 {
+    display: flex;
+    background-color: #5d5c63;
+    flex-direction: row;
+    padding: 0;
+    height: 40px; /* Altura desejada */
+    width: 110px; /* Largura desejada */
+    transition: border color background-color 0.5s ease;
+}
+
+.li-menu:hover {
+    background-color: #5d5c63;
+}
+
+.a-menu {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.3em ;
+    color: #D3D3D3;
+    padding: 7px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Para incluir o padding na largura e altura total */
+}
+
+.a-menu:hover {
+    color: #2c2b2f;
+}
+
+/* Estilos para o botão */
+.botao-login {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para a janela de login */
+.janela-login {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fechar-janela {
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 92%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.logo-login {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20%;
+}
+
+.input-form {
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-left: 20%;
+    max-width: 280px;
+    width: auto;
+    height: 40px;
+}
+
+.olho-senha {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.8c-3.8 0-6.9 3.1-6.9 6.9s3.1 6.9 6.9 6.9 6.9-3.1 6.9-6.9-3.1-6.9-6.9-6.9zM12 16c-2.1 0-3.9-1.4-4.6-3.3l1.1-0.7c0.5 1.2 1.6 2 2.9 2 1.2 0 2.4-0.8 2.9-2l1.1 0.7c-0.7 1.9-2.5 3.3-4.6 3.3zM12 7.8c0.9 0 1.6 0.7 1.6 1.6s-0.7 1.6-1.6 1.6-1.6-0.7-1.6-1.6 0.7-1.6 1.6-1.6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.input-form ::placeholder {
+    text-align: center;
+}
+
+.button-entrar {
+    text-align: center;
+    background-color: grey;
+    margin-left: 40%;
+    margin-top: 10%;
+    max-height: 40px;
+    height: 100%;
+    max-width: 80px;
+    width: 100%;
+    border-radius: 10%;
+}
